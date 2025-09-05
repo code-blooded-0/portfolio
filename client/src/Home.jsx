@@ -15,7 +15,7 @@ const Home = ({ showDownload, setShowDownload }) => {
 
 
   return (
-    <div className="bg-rose-300 h-screen text-white home customCursor">
+    <div className="bg-black h-screen text-white home customCursor">
       <div className="absolute z-50" onClick={handleShowDownload}>
         <Avatar />
       </div>

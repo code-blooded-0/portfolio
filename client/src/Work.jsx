@@ -1,10 +1,10 @@
 import CircularGallery from "./Components/CircularGal";
-import chatAppVid from "./assets/testVideoChat.mp4";
-import ollamaAppVid from "./assets/videos/Ollama_UI.mp4";
-import funwithflags from "./assets/videos/Fun_with_flags.mp4";
-import cosmiccribs from "./assets/videos/Cosmic_Cribs.mp4";
+// import chatAppVid from "./assets/testVideoChat.mp4";
+// import ollamaAppVid from "./assets/videos/Ollama_UI.mp4";
+// import funwithflags from "./assets/videos/Fun_with_flags.mp4";
+// import cosmiccribs from "./assets/videos/Cosmic_Cribs.mp4";
 // import chatAppVid from './assets/videos/Chat.mp4'
-import chatApp from "./assets/videos/Chat.mp4";
+// import chatApp from "./assets/videos/Chat.mp4";
 import Avatar from "./Components/Avatar";
 import Resume from "./assets/jrsRes.pdf";
 import Download from "./assets/downloadIcon.svg";
@@ -119,7 +119,7 @@ const Work = ({ showDownload, setShowDownload }) => {
                     className="rounded-2xl"
                     muted
                     controls
-                    src={ollamaAppVid}
+                    // src={ollamaAppVid}
                   >
                     <track default kind="captions" src="captions.vtt" />
                   </video>
@@ -179,7 +179,7 @@ const Work = ({ showDownload, setShowDownload }) => {
                     className="rounded-2xl"
                     muted
                     controls
-                    src={chatApp}
+                    // src={chatApp}
                   >
                     <track default kind="captions" src="captions.vtt" />
                   </video>
@@ -240,7 +240,7 @@ const Work = ({ showDownload, setShowDownload }) => {
                     className="rounded-2xl"
                     muted
                     controls
-                    src={cosmiccribs}
+                    // src={cosmiccribs}
                   >
                     <track default kind="captions" src="captions.vtt" />
                   </video>
@@ -301,7 +301,7 @@ const Work = ({ showDownload, setShowDownload }) => {
                     className="rounded-2xl"
                     muted
                     controls
-                    src={funwithflags}
+                    // src={funwithflags}
                   >
                     <track default kind="captions" src="captions.vtt" />
                   </video>
