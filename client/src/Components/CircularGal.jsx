@@ -11,7 +11,7 @@ import {
 
 import './CircularGallery.css';
 import Chewie from '../assets/baby_chewie.jpeg'
-import Bootstrap from '../assets/icons/Bootstrap.png'
+import Bootstrap from '../assets/icons/bootstrap.png'
 import Express from '../assets/icons/Express.png'
 import Github from '../assets/icons/github2.png'
 // import JavaScript from '../assets/icons/JavaScript.png'
