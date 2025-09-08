@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import Avatar from "./Components/Avatar";
 import Resume from './assets/jsayre_DM_PDF.pdf'
 import Download from "./assets/downloadIcon.svg";
-import ResumeDM from './assets/jrsResDM.pdf'
 
 
 const Home = ({ showDownload, setShowDownload }) => {
