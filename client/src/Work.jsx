@@ -6,7 +6,8 @@ import CircularGallery from "./Components/CircularGal";
 // import chatAppVid from './assets/videos/Chat.mp4'
 // import chatApp from "./assets/videos/Chat.mp4";
 import Avatar from "./Components/Avatar";
-import Resume from "./assets/jrsRes.pdf";
+// import Resume from "./assets/jrsRes.pdf";
+import Resume from './assets/jsayre_DM_PDF.pdf'
 import Download from "./assets/downloadIcon.svg";
 import ResumeDM from './assets/jrsResDM.pdf'
 
@@ -28,7 +29,7 @@ const Work = ({ showDownload, setShowDownload }) => {
             <div class="flex flex-col w-full max-w-[220px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl  dark:bg-teal-100">
               <div class="flex items-center space-x-2 rtl:space-x-reverse">
                 <div className="mx-auto">
-                  <a href={ResumeDM} download>
+                  <a href={Resume} download>
                     <button
                       type="button"
                       className="z-50 mt-4 hoverme inline-flex items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 focus:ring-teal-800 shadow-lg shadow-teal-500/50 shadow-lg shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
