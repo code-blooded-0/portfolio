@@ -6,7 +6,6 @@ import CircularGallery from "./Components/CircularGal";
 // import chatAppVid from './assets/videos/Chat.mp4'
 // import chatApp from "./assets/videos/Chat.mp4";
 import Avatar from "./Components/Avatar";
-// import Resume from "./assets/jrsRes.pdf";
 import Resume from './assets/jsayre_DM_PDF.pdf'
 import Download from "./assets/downloadIcon.svg";
 import ResumeDM from './assets/jrsResDM.pdf'

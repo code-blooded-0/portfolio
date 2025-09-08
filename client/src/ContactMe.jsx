@@ -1,7 +1,6 @@
 import Avatar from "./Components/Avatar";
 import { useState, useEffect } from "react";
 import { postMessage } from "./messagesService";
-// import Resume from "./assets/jrsRes.pdf";
 import Resume from './assets/jsayre_DM_PDF.pdf'
 import ResumeDM from "./assets/jrsResDM.pdf";
 import Download from "./assets/downloadIcon.svg";
