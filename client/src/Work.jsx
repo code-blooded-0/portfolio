@@ -93,7 +93,7 @@ const Work = ({ showDownload, setShowDownload }) => {
           {/* start ollama ui */}
           <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 shadow-xl ml-25">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Features
@@ -148,7 +148,7 @@ const Work = ({ showDownload, setShowDownload }) => {
             </div>
 
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left ">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-7">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 shadow-xl ml-7">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Technologies
@@ -173,7 +173,7 @@ const Work = ({ showDownload, setShowDownload }) => {
           {/* beginning chat room */}
           <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 hover:border-2 shadow-xl ml-25">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Features
@@ -222,7 +222,7 @@ const Work = ({ showDownload, setShowDownload }) => {
             </div>
 
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left ">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-7">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 shadow-xl ml-7">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Technologies
@@ -247,7 +247,7 @@ const Work = ({ showDownload, setShowDownload }) => {
           {/* start of cosmic cribs */}
           <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 shadow-xl ml-25">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Features
@@ -294,7 +294,7 @@ const Work = ({ showDownload, setShowDownload }) => {
             </div>
 
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left ">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-7">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 shadow-xl ml-7">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Technologies
@@ -319,7 +319,7 @@ const Work = ({ showDownload, setShowDownload }) => {
           {/* beginning flag app */}
           <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 shadow-xl ml-25">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Features
@@ -356,7 +356,7 @@ const Work = ({ showDownload, setShowDownload }) => {
             </div>
 
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left ">
-              <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-7">
+              <div class="flex-col rounded-2xl w-80 border-1 border-[#75b2b8] hover:border-2 shadow-xl ml-7">
                 <div class="p-8">
                   <div class="text-2xl font-bold   text-[#ffffff] pb-6 underline">
                     Technologies
