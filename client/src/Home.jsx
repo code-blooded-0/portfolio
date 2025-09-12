@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
 import Avatar from "./Components/Avatar";
-import Resume from './assets/jsayre_DM_PDF.pdf'
+import Resume from "./assets/jsayre_DM_PDF.pdf";
 import Download from "./assets/downloadIcon.svg";
-
+import PixelBlast from "./Components/PixelBlast.jsx";
+import DotGrid from "./Components/DotGrid";
 
 const Home = ({ showDownload, setShowDownload }) => {
   const navigate = useNavigate();
@@ -12,33 +13,48 @@ const Home = ({ showDownload, setShowDownload }) => {
     setShowDownload(!showDownload);
   };
 
-
   return (
     <div className="bg-black h-screen text-white customCursor h-[100vh]">
       <div className="absolute z-50" onClick={handleShowDownload}>
         <Avatar />
       </div>
 
-      {/* testing modal stuff */}
-      {showDownload && (
-        <div class="flex items-start gap-2.5 ml-36 pt-22 absolute z-50">
-          <div class="flex flex-col w-full max-w-[220px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl  dark:bg-red-200">
-            <div class="flex items-center space-x-2 rtl:space-x-reverse">
-              <div className="mx-auto">
-                <a href={Resume} download>
-                  <button
-                    type="button"
-                    className="z-50 mt-4 hoverme inline-flex items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 focus:ring-teal-800 shadow-lg shadow-teal-500/50 shadow-lg shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                  >
-                    My Resume
-                    <img className="ml-2" src={Download} />
-                  </button>
-                </a>
+      <div style={{ width: "100%", height: "100vh", position: "fixed" }} className="h-[100vh]">
+        <DotGrid
+          dotSize={10}
+          gap={15}
+          baseColor="#2b2c2cff"
+          activeColor="#27fff4"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
+
+      
+        {showDownload && (
+          <div class="flex items-start gap-2.5 ml-36 pt-22 absolute z-50">
+            <div class="flex flex-col w-full max-w-[220px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl  dark:bg-red-200">
+              <div class="flex items-center space-x-2 rtl:space-x-reverse">
+                <div className="mx-auto">
+                  <a href={Resume} download>
+                    <button
+                      type="button"
+                      className="z-50 mt-4 hoverme inline-flex items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 focus:ring-teal-800 shadow-lg shadow-teal-500/50 shadow-lg shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                    >
+                      My Resume
+                      <img className="ml-2" src={Download} />
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+
+      {/* testing modal stuff */}
       {/* end of testing bubble stuff */}
 
       <div className="pl-10 homeContainer customCursor">
