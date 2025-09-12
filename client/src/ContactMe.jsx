@@ -1,12 +1,44 @@
 import Avatar from "./Components/Avatar";
 import { useState, useEffect } from "react";
 import { postMessage } from "./messagesService";
-import Resume from './assets/jsayre_DM_PDF.pdf'
+import Resume from "./assets/jsayre_DM_PDF.pdf";
 import ResumeDM from "./assets/jrsResDM.pdf";
 import Download from "./assets/downloadIcon.svg";
+import emailjs from "emailjs-com";
 
 const ContactMe = ({ showDownload, setShowDownload }) => {
+  function sendEmail(event) {
+    event.preventDefault();
+    // emailjs.sendForm('contact_service', 'contactForm', this);
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+        event.target,
+        import.meta.env.USER_ID
+      )
+      .then((res) => {
+        console.log("SUCCESS!", res.status, res.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+  }
+
+  const closeModalFunction = () => {
+    setModal(false);
+        setContactForm({
+          email: "",
+          fName: "",
+          lName: "",
+          phone: "",
+          company: "",
+          message: "",
+        });
+  };
+
   const [modal, setModal] = useState(false);
+  const [closeModal, setCloseModal] = useState(false);
 
   const [contactForm, setContactForm] = useState({
     email: "",
@@ -22,9 +54,8 @@ const ContactMe = ({ showDownload, setShowDownload }) => {
   }, [contactForm]);
 
   useEffect(() => {
-console.log("modal changing", modal)
-  }, [modal])
-  
+    console.log("modal changing", modal);
+  }, [modal]);
 
   const handleShowDownload = () => {
     setShowDownload(!showDownload);
@@ -33,7 +64,11 @@ console.log("modal changing", modal)
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("SUBMIT & form", contactForm);
+    setModal(true);
 
+
+
+    // need to set up the below for mongoDB
     const sendMessageSC = async () => {
       console.log("sendmessage", contactForm);
       const response = await postMessage(contactForm);
@@ -85,7 +120,7 @@ console.log("modal changing", modal)
         <div
           id="small-modal"
           tabindex="-1"
-          class="fixed pl-184 mt-80 top-10 left-30 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          class="fixed pl-157 mt-80 top-10 left-30 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
         >
           <div class="relative w-full max-w-md max-h-full ">
             <div class="relative bg-white rounded-lg shadow-sm  dark:bg-rose-300">
@@ -94,8 +129,7 @@ console.log("modal changing", modal)
                   Your message has been sent!
                 </h3>
                 <button
-
-                onClick={() => setModal(false)}
+                  onClick={() => closeModalFunction()}
                   type="button"
                   class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                   data-modal-hide="small-modal"
@@ -123,7 +157,11 @@ console.log("modal changing", modal)
         </div>
       )}
 
-      <form className="w-[550px]  mx-auto h-[850px] pt-[250px]">
+      <form
+        action=""
+        onSubmit={sendEmail}
+        className="w-[550px]  mx-auto h-[850px] pt-[250px]"
+      >
         <div className="contactbg2 p-4 border-4 rounded-2xl border-gray-700">
           <div className="relative z-0 w-full mb-5 group mt-2">
             <input
@@ -251,7 +289,7 @@ console.log("modal changing", modal)
           </div>
           <button
             onClick={handleSubmit}
-            type="button"
+            type="submit"
             className="mt-4 hoverme inline-flex items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 focus:ring-teal-800 shadow-lg shadow-teal-500/50 shadow-lg shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             Message me

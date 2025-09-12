@@ -61,13 +61,16 @@ const Experience = ({ showDownload, setShowDownload }) => {
           <hr className="ml-4 mt-5 w-[500px] p-[1px] text-indigo-700 bg-indigo-700 " />
         </span>
       </div>
+
+
       <svg
-        className="w-[550px] ml-[400px] mt-[-130px] h-[450px] z-0 stroke-indigo-700 text-indigo-700 fixed"
+        className="w-[550px] ml-[420px] mt-[-130px] h-[450px] z-0 stroke-indigo-700 text-indigo-700 fixed"
         viewBox="50 10 100 50"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line x1="90" y1="90" x2="90" y2="20" pathLength="10" />
       </svg>
+
       <div className="mx-auto flex w-[675px] mt-6 z-50 relative">
         <div className="flex flex-col w-[75px] mostly-customized-scrollbar">
           <h1
@@ -126,9 +129,11 @@ const Experience = ({ showDownload, setShowDownload }) => {
             </a>
           </h1>
         </div>
+
+
         <div
           id="jobs"
-          className="flex ml-14 flex-col overflow-hidden h-[300px] z-50"
+          className="flex ml-18 flex-col overflow-hidden h-[300px] z-50"
         >
           <div id="job1"></div>
           <h1 className="text-xl">Instructor’s Assistant (Full Stack)</h1>
