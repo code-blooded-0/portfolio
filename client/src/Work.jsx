@@ -6,10 +6,9 @@ import CircularGallery from "./Components/CircularGal";
 // import chatAppVid from './assets/videos/Chat.mp4'
 // import chatApp from "./assets/videos/Chat.mp4";
 import Avatar from "./Components/Avatar";
-import Resume from './assets/jsayre_DM_PDF.pdf'
+import Resume from "./assets/jsayre_DM_PDF.pdf";
 import Download from "./assets/downloadIcon.svg";
-import ResumeDM from './assets/jrsResDM.pdf'
-
+import ResumeDM from "./assets/jrsResDM.pdf";
 
 const Work = ({ showDownload, setShowDownload }) => {
   const handleShowDownload = () => {
@@ -18,7 +17,7 @@ const Work = ({ showDownload, setShowDownload }) => {
 
   return (
     <>
-      <div className="work">
+      <div className="bg-black">
         <div className="absolute z-50" onClick={handleShowDownload}>
           <Avatar />
         </div>
@@ -45,7 +44,7 @@ const Work = ({ showDownload, setShowDownload }) => {
 
         <div className="pt-46">
           <div className="UserListHeader mx-auto text-center pb-10">
-            <span className="text-5xl" >My Apps</span>
+            <span className="text-5xl">My Apps</span>
           </div>
 
           {/* <div className="pt-4 mx-16 pb-[0px] flex flex-row justify-between">
@@ -91,8 +90,8 @@ const Work = ({ showDownload, setShowDownload }) => {
             </div>
           </div> */}
 
-{/* start ollama ui */}
-<div className="pt-4 pb-[50px] flex flex-row justify-between">
+          {/* start ollama ui */}
+          <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
               <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
                 <div class="p-8">
@@ -115,14 +114,35 @@ const Work = ({ showDownload, setShowDownload }) => {
               <label className="text-4xl">Ollama UI</label>
               <div className="text-white mb-10">
                 <div className="text-white font-bold mt-3">
-                  <video
+                  {/* <video
                     className="rounded-2xl"
                     muted
                     controls
                     // src={ollamaAppVid}
                   >
                     <track default kind="captions" src="captions.vtt" />
-                  </video>
+                  </video> */}
+
+                  {/* <iframe
+                    width="560"
+                    height="315"
+                    src={`https://www.youtube.com/watch?v=jSV625mwW6E`}
+                    title="Ollama UI"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe> */}
+
+                  <iframe
+                    className="mx-auto rounded-2xl"
+                    width="560"
+                    height="315"
+                    src={`https://www.youtube-nocookie.com/embed/jSV625mwW6E`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             </div>
@@ -148,10 +168,10 @@ const Work = ({ showDownload, setShowDownload }) => {
               </div>
             </div>
           </div>
-{/* end ollama ui */}
+          {/* end ollama ui */}
 
-{/* beginning chat room */}
-<div className="pt-4 pb-[50px] flex flex-row justify-between">
+          {/* beginning chat room */}
+          <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
               <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
                 <div class="p-8">
@@ -163,7 +183,9 @@ const Work = ({ showDownload, setShowDownload }) => {
                       <li>- Login</li>
                       <li>- Multiple chat rooms</li>
                       <li>- Messages storage in database</li>
-                      <li>- Ollama AI chatbot integrated into chat rooms @hivemind</li>
+                      <li>
+                        - Ollama AI chatbot integrated into chat rooms @hivemind
+                      </li>
                       <li>- Avatar upload</li>
                     </ul>
                   </div>
@@ -171,19 +193,31 @@ const Work = ({ showDownload, setShowDownload }) => {
               </div>
             </div>
 
-            <div className="UserList text-white flex-col w-[1000px]  mt-auto mb-auto text-center">
+            <div className="UserList text-white flex-col w-[1000px] mt-auto mb-auto text-center mx-auto bg-green">
               <label className="text-4xl">Chat App</label>
-              <div className="text-white mb-10 mt-3">
+              <div className="text-white mb-10 mt-3 mx-auto">
                 <div className="text-white font-bold">
-                  <video
+                  {/* <video
                     className="rounded-2xl"
                     muted
                     controls
                     src="https://youtube.com/shorts/gQgortMkwUI?si=Y8wNRG3T3hvhR7yw"
                   >
                     <track default kind="captions" src="captions.vtt" />
-                  </video>
+ƒ
+                  </video> */}
+                  <iframe
+                    className="mx-auto rounded-2xl"
+                    width="560"
+                    height="315"
+                    src={`https://www.youtube-nocookie.com/embed/VLX--MDjJYo`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
+                {/* // https://youtu.be/_w3e5iuCXrc */}
               </div>
             </div>
 
@@ -208,10 +242,9 @@ const Work = ({ showDownload, setShowDownload }) => {
               </div>
             </div>
           </div>
-{/* end chat room */}
+          {/* end chat room */}
 
-          
-{/* start of cosmic cribs */}
+          {/* start of cosmic cribs */}
           <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
               <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
@@ -236,14 +269,26 @@ const Work = ({ showDownload, setShowDownload }) => {
               <label className="text-4xl">Real Estate App</label>
               <div className="text-white mb-10 mt-3">
                 <div className="text-white font-bold">
-                  <video
+                  {/* <video
                     className="rounded-2xl"
                     muted
                     controls
                     // src={cosmiccribs}
                   >
                     <track default kind="captions" src="captions.vtt" />
-                  </video>
+                  </video> */}
+
+                  <iframe
+                    className="mx-auto rounded-2xl"
+                    width="560"
+                    height="315"
+                    src={`https://www.youtube-nocookie.com/embed/_w3e5iuCXrc`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  {/* https://youtube.com/shorts/gQgortMkwUI */}
                 </div>
               </div>
             </div>
@@ -269,11 +314,10 @@ const Work = ({ showDownload, setShowDownload }) => {
               </div>
             </div>
           </div>
-{/* end of cosmic cribs */}
+          {/* end of cosmic cribs */}
 
-
-{/* beginning flag app */}
-<div className="pt-4 pb-[50px] flex flex-row justify-between">
+          {/* beginning flag app */}
+          <div className="pt-4 pb-[50px] flex flex-row justify-between">
             <div className="UserList text-white flex-col w-[450px] mt-auto mb-auto text-left">
               <div class="flex-col rounded-2xl w-80 bg-[#75b2b8] shadow-xl ml-25">
                 <div class="p-8">
@@ -297,14 +341,16 @@ const Work = ({ showDownload, setShowDownload }) => {
               <label className="text-4xl">Game App</label>
               <div className="text-white mb-10 mt-3">
                 <div className="text-white font-bold">
-                  <video
-                    className="rounded-2xl"
-                    muted
-                    controls
-                    // src={funwithflags}
-                  >
-                    <track default kind="captions" src="captions.vtt" />
-                  </video>
+                  <iframe
+                    className="mx-auto rounded-2xl"
+                    width="560"
+                    height="315"
+                    src={`https://www.youtube-nocookie.com/embed/gQgortMkwUI`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             </div>
@@ -328,9 +374,7 @@ const Work = ({ showDownload, setShowDownload }) => {
               </div>
             </div>
           </div>
-{/* end flag app */}
-
-
+          {/* end flag app */}
         </div>
 
         <div className="">

@@ -28,7 +28,7 @@ const Experience = ({ showDownload, setShowDownload }) => {
   };
 
   return (
-    <div className="experience experience2 text-blue-100">
+    <div className="experience experience2 bg-black text-blue-100">
       <div className="absolute z-50" onClick={handleShowDownload}>
         <Avatar />
       </div>
@@ -62,7 +62,7 @@ const Experience = ({ showDownload, setShowDownload }) => {
         </span>
       </div>
       <svg
-        className="w-[550px] ml-[400px] mt-[-130px] h-[450px] z-0 absolute stroke-indigo-700 text-indigo-700 "
+        className="w-[550px] ml-[400px] mt-[-130px] h-[450px] z-0 stroke-indigo-700 text-indigo-700 fixed"
         viewBox="50 10 100 50"
         xmlns="http://www.w3.org/2000/svg"
       >
